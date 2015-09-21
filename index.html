@@ -49,6 +49,14 @@
 <li>request/stream (finite stream of many)</li>
 <li>fire-and-forget (no response)</li>
 <li>event subscription (infinite stream of many)</li>
+<li>channel (bi-directional streams)</li>
+</ul>
+
+<p>Information can be found in these documents:</p>
+<ul>
+  <li>[Motivations.md](https://github.com/ReactiveSocket/reactivesocket/blob/master/Motivations.md) - Why ReactiveSocket?</li>
+  <li>[FAQ.md](https://github.com/ReactiveSocket/reactivesocket/blob/master/FAQ.md) - Frequently Asked Questions</li>
+  <li>[Protocol.md](https://github.com/ReactiveSocket/reactivesocket/blob/master/Protocol.md) - The Protocol</li>
 </ul>
 
 <p>The <a href="https://github.com/ReactiveSocket/reactivesocket-java">core project for Java</a> implements the protocol and exposes Reactive Stream APIs. Typically most use will come via another library that uses the core. </p>
@@ -58,7 +66,6 @@
 <ul>
 <li>ReactiveSocket over WebSockets using RxNetty <a href="https://github.com/ReactiveSocket/reactivesocket-websockets-rxnetty">reactivesocket-websockets-rxnetty</a></li>
 <li>ReactiveSocket over Aeron in Java <a href="https://github.com/ReactiveSocket/reactivesocket-aeron-rxjava">reactivesocket-aeron-rxjava</a></li>
-<li>ReactiveSocket over HTTP/1 and HTTP/2 using RxNetty <a href="https://github.com/ReactiveSocket/reactivesocket-http-rxnetty">reactivesocket-http-rxnetty</a></li>
 </ul>
 
 <p>ReactiveSocket is for communicating across network boundaries thus it is intended to be polyglot. Currently only Javascript is being pursued:</p>
@@ -70,22 +77,6 @@
 
 <p>If you would like to contribute an implementation in another language or for different libraries, platforms or frameworks of your choice, please contact us to explore creating a new repo. </p>
 
-<hr>
-
-<p>
-  So why the "ReactiveSocket" name? Isn't "Reactive" a totally <a href="http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp">hyped</a> buzzword? 
-</p>
-<p>
-  This library is directly related to several projects where "Reactive" is an important part of their name and architectural pattern. Thus the choice was made to retain this relationship in the name. Specifically:
-  <ul>
-    <li><a href="http://www.reactive-streams.org">Reactive Streams</a></li>
-    <li><a href="https://github.com/reactive-streams/reactive-streams-io">Reactive Streams IO</a> - proposed network protocol conforming to the Reactive Streams semantics</li>
-    <li><a href="http://www.reactivex.io">Reactive Extensions</a> with <a href="https://github.com/ReactiveX/RxJava">RxJava</a> and <a href="https://github.com/ReactiveX/RxJS">RxJS</a> in particular</li>
-    <li><a href="http://www.reactivemanifesto.org">Reactive Manifesto</a> - particularly the "Message Driven" aspect</li>
-  </ul>
-  ReactiveSocket implements, uses, or follows the principles in these projects and libraries, thus the name. 
-</p>
-  
 </section>
 
     </div>
