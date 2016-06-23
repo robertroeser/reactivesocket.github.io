@@ -22,7 +22,6 @@
         <nav>
           <li class="fork"><a href="https://github.com/ReactiveSocket/reactivesocket">Protocol</a></li>
           <li class="fork"><a href="https://github.com/ReactiveSocket/reactivesocket-java">Java</a></li>
-          <li class="fork"><a href="https://github.com/ReactiveSocket/reactivesocket-java-impl">Java Transport Implementations</a></li>
           <li class="fork"><a href="https://github.com/ReactiveSocket/reactivesocket-js">JS</a></li>
           <li class="fork"><a href="https://github.com/ReactiveSocket/reactivesocket-cpp">C++</a></li>
         </nav>
@@ -73,8 +72,9 @@
 <p>The <a href="https://github.com/ReactiveSocket/reactivesocket-java">core project for Java</a> implements the protocol and exposes Reactive Stream APIs. Typically most use will come via another library that uses the core. For example:</p>
 
 <ul>
-<li>ReactiveSocket over WebSockets using Netty <a href="https://github.com/ReactiveSocket/reactivesocket-java-impl/tree/master/reactivesocket-netty/src/main/java/io/reactivesocket/netty/websocket">reactivesocket-websockets-netty</a></li>
-<li>ReactiveSocket over Aeron in Java <a href="https://github.com/ReactiveSocket/reactivesocket-java-impl/tree/master/reactivesocket-aeron">reactivesocket-aeron</a></li>
+<li>ReactiveSocket over TCP using Netty <a href="https://github.com/ReactiveSocket/reactivesocket-java/tree/master/reactivesocket-transport-tcp">reactivesocket-transport-tcp</a></li>
+<li>ReactiveSocket over WebSockets using Netty <a href="https://github.com/ReactiveSocket/reactivesocket-java/tree/master/reactivesocket-transport-websockett">reactivesocket-transport-websocket</a></li>
+<li>ReactiveSocket over Aeron <a href="https://github.com/ReactiveSocket/reactivesocket-java/tree/master/reactivesocket-transport-aeron">reactivesocket-transport-aeron</a></li>
 </ul>
 
 
